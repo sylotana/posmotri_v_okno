@@ -147,6 +147,14 @@ ol {
   text-decoration: underline;
 }
 
+.search-form__label:active .search-form__pseudo-checkbox::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  margin: 1px;
+  background-color: #fff;
+}
+
 .search-form__pseudo-checkbox {
   position: relative;
   width: 19px;
@@ -157,10 +165,12 @@ ol {
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   position: absolute;
   content: "";
-  inset: 0;
+  inset: 0;   
   margin: 1px;
   background-color: #fff;
 }
+
+
 
 .search-form__fieldset-title {
   font-size: 18px;
